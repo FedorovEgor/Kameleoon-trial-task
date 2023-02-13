@@ -1,6 +1,6 @@
 ### **Kameleoon trial task project.**
 
-Project created with Java 8, Spring Boot and H2 in-memory database.
+Project created with Java 8, Spring Boot and H2 in-memory database. Database migrations are done with Flyway support.
 
 The project runs on Localhost 8080 port by default.
 
