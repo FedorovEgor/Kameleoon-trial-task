@@ -16,10 +16,10 @@ For more comfortable testing of REST services swagger support provided and can b
 Features that are covered in this project:
 
 ##### **Registration controller:**
-  - **/api/v1/registration/save/user**: allows to register new user. POST Method.
+  - **/api/v1/registration/save/user**: allows to register new user. **POST** Method.
   
 ##### **User controller:** 
-  - **/api/v1/users/get/{userId}**: allows to get information about specific user by passing his Id. GET Method.
+  - **/api/v1/users/get/{userId}**: allows to get information about specific user by passing his Id. **GET** Method.
   
 ##### **Quote controller:**
   - **/api/v1/quotes/save/quote**: allows to create new quote and link it to user. **POST** Method.
