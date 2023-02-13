@@ -38,4 +38,10 @@ Features that are covered in this project:
   - **/api/v1/votes/save/vote**: allows to create vote and link it to specific user and specific quote. **POST** Method.
   - **/api/v1/votes/get/{voteId}**: allows to view specific vote by passing it's Id. **GET** Method.
   - **/api/v1/votes/get/user/{userId}**: allows to get all votes from specific user. Input parameter is userId. **GET** Method.
-  - **/api/v1/votes/get/graph/{quoteId}**: allows to see evolution of votes over time for a specific quote. Input parameter is quote Id. **GET** Method.    
+  - **/api/v1/votes/get/graph/{quoteId}**: allows to see evolution of votes over time for a specific quote. Input parameter is quote Id. **GET** Method.
+  
+To run this project you can use **docker-compose.yml** file and **$ Docker compose up** command.
+If running from IDE please use these environment variables:
+  - **H2_NAME**: **backdb**
+  - **H2_USER**: **sa**
+  - **H2_PASSWORD**: **password** 

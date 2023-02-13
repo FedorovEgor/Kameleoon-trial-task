@@ -10,3 +10,6 @@ services:
           - "8080:8080"
         environment:
           TZ: Europe/Moscow
+          H2_NAME: backdb
+          H2_USER: sa
+          H2_PASSWORD: password
