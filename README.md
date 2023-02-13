@@ -7,6 +7,7 @@ The project runs on Localhost 8080 port by default.
 H2 database console can be accessed via link: **http://localhost:8080/h2-console**
 
 Login credentials for H2 database are:
+ - JDBC url: jdbc:h2:mem:backdb
  - Login: **sa**
  - Password: **password**
  
