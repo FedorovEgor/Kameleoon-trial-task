@@ -42,7 +42,7 @@ public class QuoteController {
             @ApiResponse(code = 200, message = "Operation's done")
     })
     public QuoteDto getQuoteById(@PathVariable("quoteId") Integer quoteId) {
-        log.debug("Request for getQuoteById: {}", quoteId);
+        log.debug("Request for getQuoteById: quoteId - {}", quoteId);
         return quoteService.getQuoteById(quoteId);
     }
 
@@ -56,7 +56,7 @@ public class QuoteController {
             @ApiParam(required = true, value = "User identification number", example = "1")
             @PathVariable Integer userId)
     {
-        log.debug("Request for getQuotesFromUser: {}", userId);
+        log.debug("Request for getQuotesFromUser: userId - {}", userId);
         return quoteService.getAllQuotesFromUser(userId);
     }
 
@@ -80,7 +80,7 @@ public class QuoteController {
     public QuoteDto getRandomQuoteByUser(
             @ApiParam(required = true, value = "User identification number", example = "1")
             @PathVariable Integer userId) {
-        log.debug("Request for getRandomQuoteByUser: {}", userId);
+        log.debug("Request for getRandomQuoteByUser: userId - {}", userId);
         return quoteService.getRandomQuoteFromUser(userId);
     }
 
@@ -93,7 +93,7 @@ public class QuoteController {
     public List<QuoteDto> getTopQuotes(
             @ApiParam(required = true, value = "Limit for top quotes", example = "1")
             @PathVariable("limit") Integer limit) {
-        log.debug("Request for getTopQuotes: {}", limit);
+        log.debug("Request for getTopQuotes: limit - {}", limit);
         return quoteService.getTopQuotes(limit);
     }
 
@@ -108,7 +108,7 @@ public class QuoteController {
             @PathVariable("userId") Integer userId,
             @ApiParam(required = true, value = "Limit for top quotes", example = "1")
             @PathVariable("limit") Integer limit) {
-        log.debug("Request for getTopQuotesFromUser: {}, {}", userId, limit);
+        log.debug("Request for getTopQuotesFromUser: userId - {}, limit - {}", userId, limit);
         return quoteService.getTopQuotesFromUser(userId, limit);
     }
 
@@ -121,7 +121,7 @@ public class QuoteController {
     public List<QuoteDto> getFlopQuotes(
             @ApiParam(required = true, value = "Limit for flop quotes", example = "1")
             @PathVariable("limit") Integer limit) {
-        log.debug("Request for getFlopQuotes: {}", limit);
+        log.debug("Request for getFlopQuotes: limit - {}", limit);
         return quoteService.getFlopQuotes(limit);
     }
 
@@ -136,7 +136,7 @@ public class QuoteController {
             @PathVariable("userId") Integer userId,
             @ApiParam(required = true, value = "Limit for flop quotes", example = "1")
             @PathVariable("limit") Integer limit) {
-        log.debug("Request for getFlopQuotesFromUser: {}, {}", userId, limit);
+        log.debug("Request for getFlopQuotesFromUser: userId - {}, limit - {}", userId, limit);
         return quoteService.getFlopQuotesFromUser(userId, limit);
     }
 
@@ -147,7 +147,7 @@ public class QuoteController {
             @ApiResponse(code = 200, message = "Operation's done")
     })
     public void deleteQuote(Integer quoteId) {
-        log.debug("Request for deleteQuote: {}", quoteId);
+        log.debug("Request for deleteQuote: quoteId - {}", quoteId);
         quoteService.deleteQuote(quoteId);
     }
 
@@ -158,7 +158,7 @@ public class QuoteController {
             @ApiResponse(code = 200, message = "Operation's done")
     })
     public void editQuote(@RequestBody QuoteEditRequestDto quoteEditDto, @PathVariable Integer quoteId) {
-        log.debug("Request for editQuote: {}, {}", quoteEditDto, quoteId);
+        log.debug("Request for editQuote: {}, quoteId - {}", quoteEditDto, quoteId);
         quoteService.editQuote(quoteEditDto, quoteId);
     }
 }

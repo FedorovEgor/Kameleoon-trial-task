@@ -40,7 +40,7 @@ public class VoteController {
             @ApiResponse(code = 200, message = "Operation's done")
     })
     public VoteDto getVoteById(@PathVariable("voteId") Integer voteId) {
-        log.debug("Request for getVoteById: {}", voteId);
+        log.debug("Request for getVoteById: voteId - {}", voteId);
         return voteService.getVoteById(voteId);
     }
 
@@ -51,7 +51,7 @@ public class VoteController {
             @ApiResponse(code = 200, message = "Operation's done")
     })
     public Set<VoteDto> getVotesFromUser(@PathVariable("userId") Integer userId) {
-        log.debug("Request for getVotesFromUser: {}", userId);
+        log.debug("Request for getVotesFromUser: userId - {}", userId);
         return voteService.getVotesFromUser(userId);
     }
 
@@ -62,7 +62,7 @@ public class VoteController {
             @ApiResponse(code = 200, message = "Operation's done")
     })
     public List<VoteDto> getVotesGraphForQuote(@PathVariable("quoteId") Integer quoteId) {
-        log.debug("Request for getVotesGraphForQuote: {}", quoteId);
+        log.debug("Request for getVotesGraphForQuote: quoteId - {}", quoteId);
         return voteService.getVotesGraphForQuote(quoteId);
     }
 }

@@ -30,7 +30,7 @@ public class UserController {
     public UserDto getUserInfo(
             @ApiParam(required = true, value = "User identification number", example = "1")
             @PathVariable Integer userId) {
-        log.debug("Request for getUserInfo: {}", userId);
+        log.debug("Request for getUserInfo: userId - {}", userId);
         return userService.getUserInfoById(userId);
     }
 }
