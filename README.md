@@ -37,5 +37,5 @@ Features that are covered in this project:
 ##### **Vote controller:**
   - **/api/v1/votes/save/vote**: allows to create vote and link it to specific user and specific quote. **POST** Method.
   - **/api/v1/votes/get/{voteId}**: allows to view specific vote by passing it's Id. **GET** Method.
-  - **/api/v1/votes/get/{userId}**: allows to get all votes from specific user. Input parameter is userId. **GET** Method.
+  - **/api/v1/votes/get/user/{userId}**: allows to get all votes from specific user. Input parameter is userId. **GET** Method.
   - **/api/v1/votes/get/graph/{quoteId}**: allows to see evolution of votes over time for a specific quote. Input parameter is quote Id. **GET** Method.    

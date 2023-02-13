@@ -44,7 +44,7 @@ public class VoteController {
         return voteService.getVoteById(voteId);
     }
 
-    @GetMapping(value = "get/{userId}")
+    @GetMapping(value = "get/user/{userId}")
     @ResponseBody
     @ApiOperation(value = "Get votes from user", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiResponses({
