@@ -46,7 +46,7 @@ public class QuoteController {
         return quoteService.getQuoteById(quoteId);
     }
 
-    @GetMapping(value = "get/{userId}")
+    @GetMapping(value = "get/user/{userId}")
     @ResponseBody
     @ApiOperation(value = "Get quotes from user", produces = MediaType.APPLICATION_JSON_VALUE)
     @ApiResponses({

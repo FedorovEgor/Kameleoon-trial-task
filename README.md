@@ -26,7 +26,7 @@ Features that are covered in this project:
   - **/api/v1/quotes/edit/{quoteId}**: allows to edit existing quote by passing it's Id and new qoute's content. **PUT** Method.
   - **/api/v1/quotes/delete/{quoteId}**: allows to delete existing quote by passing it's Id. **DELETE** Method.
   - **/api/v1/quotes/get/{quoteId}**: allows to view specific quote's information by passing quote Id. **GET** Method.
-  - **/api/v1/quotes/get/{userId}**: allows to get list of specific user quotes by passing user Id. **GET** Method.
+  - **/api/v1/quotes/get/user/{userId}**: allows to get list of specific user quotes by passing user Id. **GET** Method.
   - **/api/v1/quotes/get/random**: allows to view random quote from all quotes that are posted. **GET** Method.
   - **/api/v1/quotes/get/random/{userId}**: allows to view random quote from specific user by passing user Id. **GET** Method.
   - **/api/v1/quotes/get/top/{limit}**: allows to get number of most upvoted quotes, the number of returned quotes is flexible and controlled by input limit parameter. **GET** Method.
